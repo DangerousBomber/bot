@@ -32,7 +32,7 @@ async def button_handler(update, context):
             [InlineKeyboardButton("🔙 Back", callback_data="back")]
         ]
         await query.edit_message_text(
-            "🎯 **Demo Access :**\n\nSend Number👇",
+            "🎯 **Demo Access :**\n\nSend Number",
             reply_markup=InlineKeyboardMarkup(keyboard),
             parse_mode="Markdown"
         )
@@ -110,3 +110,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
